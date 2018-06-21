@@ -108,20 +108,3 @@ class Calculator:
 root = Tk()
 obj=Calculator(root) #object instantiated
 root.mainloop()
-
-
-#         *** uWSGI is running in multiple interpreter mode ***
-# spawned uWSGI master process (pid: 4457)
-# spawned uWSGI worker 1 (pid: 4459, cores: 8)
-# Python auto-reloader enabled
-# 2018-06-07 17:15:23 [uWSGIWorker1Core0] - flashmob.api.request - INFO - Get headers: {'X-ROLES': 'Racker,encore_mass_comms_staging,lefty_ticket_admin,encore_mass_comms_flashmob_staging', 'X-MAP-ROLES': 'eyJyZXBvc2UvZG9tYWluL3JvbGVzIjpbIlJhY2tlciIsImVuY29yZV9tYXNzX2NvbW1zX3N0YWdpbmciLCJsZWZ0eV90aWNrZXRfYWRtaW4iLCJlbmNvcmVfbWFzc19jb21tc19mbGFzaG1vYl9zdGFnaW5nIl19', 'X-PP-USER': 'AAAt4HjZHKN4AVexaZftZBGX-QGIg5ejL4CxJHR1dOFuE_4k3VNIgu6JLOvhS3vFVfBRmkkDkXVCFZdtAePrnDPvMtmCY9_Eymo8PiLoVf6U5LiKlRZYCVCb;q=0.1, 192.168.33.1;q=0.4, flashmob_stage', 'X-TOKEN-EXPIRES': 'Fri, 08 Jun 2018 09:02:20 GMT', 'X-AUTHORIZATION': 'Proxy', 'HOST': 'localhost:8001', 'X-AUTH-TOKEN-KEY': 'IDENTITY:V2:TOKEN:AAAt4HjZHKN4AVexaZftZBGX-QGIg5ejL4CxJHR1dOFuE_4k3VNIgu6JLOvhS3vFVfBRmkkDkXVCFZdtAePrnDPvMtmCY9_Eymo8PiLoVf6U5LiKlRZYCVCb', 'VIA': '1.1 localhost:8080 (Repose/8.8.3.0)', 'X-AUTHENTICATED-BY': 'PASSWORD', 'X-USER-ID': 'flashmob_stage', 'X-FORWARDED-FOR': '192.168.33.1', 'CONNECTION': 'Keep-Alive', 'X-AUTH-TOKEN': 'AAAt4HjZHKN4AVexaZftZBGX-QGIg5ejL4CxJHR1dOFuE_4k3VNIgu6JLOvhS3vFVfBRmkkDkXVCFZdtAePrnDPvMtmCY9_Eymo8PiLoVf6U5LiKlRZYCVCb', 'X-USER-NAME': 'flashmob_stage', 'X-PP-GROUPS': 'X-Auth-Token;q=0.1, ipv4-match-all;q=0.4', 'ACCEPT': 'application/json'}
-# 2018-06-07 17:15:23 [uWSGIWorker1Core0] - flashmob.api.request - INFO - REQUEST: flashmob_stage|GET /api/notifications|None
-# 2018-06-07 17:15:23 [uWSGIWorker1Core0] - flashmob.api.request - INFO - RESPONSE: 200 OK|['{"prev_page": null, "total_items": 0, "items": [], "next_page": null, "total_pages": 0}']|45.696ms
-# [pid: 4459|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1388 bytes} [Thu Jun  7 17:15:23 2018] GET /api/notifications => generated 87 bytes in 47 msecs (HTTP/1.1 200) 2 headers in 108 bytes (1 switches on core 0)
-
-
-# Python auto-reloader enabled
-# 2018-06-07 17:18:20 [uWSGIWorker1Core0] - flashmob.api.request - INFO - Get headers: {'X-ROLES': 'Racker,encore_mass_comms_staging,lefty_ticket_admin,encore_mass_comms_flashmob_staging', 'CONNECTION': 'Keep-Alive', 'X-AUTH-TOKEN': 'AAAt4HjZHKN4AVexaZftZBGX-QGIg5ejL4CxJHR1dOFuE_4k3VNIgu6JLOvhS3vFVfBRmkkDkXVCFZdtAePrnDPvMtmCY9_Eymo8PiLoVf6U5LiKlRZYCVCb', 'X-AUTH-TOKEN-KEY': 'IDENTITY:V2:TOKEN:AAAt4HjZHKN4AVexaZftZBGX-QGIg5ejL4CxJHR1dOFuE_4k3VNIgu6JLOvhS3vFVfBRmkkDkXVCFZdtAePrnDPvMtmCY9_Eymo8PiLoVf6U5LiKlRZYCVCb', 'X-PP-GROUPS': 'X-Auth-Token;q=0.1, ipv4-match-all;q=0.4', 'X-AUTHENTICATED-BY': 'PASSWORD', 'X-USER-NAME': 'flashmob_stage', 'X-MAP-ROLES': 'eyJyZXBvc2UvZG9tYWluL3JvbGVzIjpbIlJhY2tlciIsImVuY29yZV9tYXNzX2NvbW1zX3N0YWdpbmciLCJsZWZ0eV90aWNrZXRfYWRtaW4iLCJlbmNvcmVfbWFzc19jb21tc19mbGFzaG1vYl9zdGFnaW5nIl19', 'X-TOKEN-EXPIRES': 'Fri, 08 Jun 2018 09:02:20 GMT', 'VIA': '1.1 localhost:8080 (Repose/8.8.3.0)', 'X-PP-USER': 'AAAt4HjZHKN4AVexaZftZBGX-QGIg5ejL4CxJHR1dOFuE_4k3VNIgu6JLOvhS3vFVfBRmkkDkXVCFZdtAePrnDPvMtmCY9_Eymo8PiLoVf6U5LiKlRZYCVCb;q=0.1, 192.168.33.1;q=0.4, flashmob_stage', 'X-FORWARDED-FOR': '192.168.33.1', 'HOST': 'localhost:8001', 'ACCEPT': 'application/json', 'X-USER-ID': 'flashmob_stage', 'X-AUTHORIZATION': 'Proxy'}
-# 2018-06-07 17:18:20 [uWSGIWorker1Core0] - flashmob.api.request - INFO - REQUEST: flashmob_stage|GET /api/notifications|None
-# 2018-06-07 17:18:20 [uWSGIWorker1Core0] - flashmob.api.request - INFO - RESPONSE: 200 OK|['{"items": [], "total_pages": 0, "total_items": 0, "prev_page": null, "next_page": null}']|41.085ms
-# [pid: 4495|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1388 bytes} [Thu Jun  7 17:18:20 2018] GET /api/notifications => generated 87 bytes in 45 msecs (HTTP/1.1 200) 2 headers in 108 bytes (1 switches on core 0)
